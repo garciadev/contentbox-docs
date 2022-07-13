@@ -38,7 +38,7 @@ The `cb` object contains a variety of common methods for retrieving ContentBox c
 
 #### Content Store Retrieval
 
-* * `cb.contentStore( string slug )`: retrieves the HTML output of a [Content Store](https://github.com/ortus/contentbox-modular-cms/tree/76cb63aa894e4f019c2d324f6bfb86f8d0142a92/content/using/managers/contentstore.html) item by its slug
+* `cb.contentStore( string slug )`: retrieves the HTML output of a [Content Store](https://github.com/ortus/contentbox-modular-cms/tree/76cb63aa894e4f019c2d324f6bfb86f8d0142a92/content/using/managers/contentstore.html) item by its slug
 * `cb.contentStoreObject( string slug )`: retrieves the associated [Content Store](https://github.com/ortus/contentbox-modular-cms/tree/76cb63aa894e4f019c2d324f6bfb86f8d0142a92/content/using/managers/contentstore.html) object
 * `cb.widget( string widgetName, struct args )`: executes a named widget's `renderit` method and returns the HTML.  A structure of arguments may be passed.
 * `cb.getWidget( string widgetName )`: retreives the associated \[widget\]\[2\] object
@@ -58,7 +58,9 @@ The `cb` object contains a variety of common methods for retrieving ContentBox c
 * `cb.linkSiteRSS( any categoryFilter )`: creates a link to the site's RSS feed
 * `cb.linkCategory( string categorySlug )`: creates a link to a specific category page
 * `cb.quickCategoryLinks( string categorySlug )`: creates an HTML unordered list of category links
-* **Path and URL Utility Methods**
+
+#### Path and URL Utility Methods
+
 * `cb.themeRoot()`: returns the location of your currently defined theme in the application, great for assets, cfincludes, etc
 * `cb.siteRoot()`: returns the site root location using your configured module's entry point
 * `cb.siteBaseURL()`: returns the site's SES base URL
@@ -84,6 +86,3 @@ A number of built-in interception points are avaialble within the ContentBox req
 
 * **Easily Render Captcha Images** - ContentBox supports native captcha support and now your themes can render out a nice captcha image by using the new ContentBox helper method:
   * `cb.renderCaptcha()` method.
-
-\[2\]: /content/using/managers/widgets.html
-
